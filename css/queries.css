@@ -1,0 +1,517 @@
+/******************************************************/
+/* --- FOR WIDTH <= 1312px --- */
+/******************************************************/
+
+@media (max-width: 82em) {
+  .hero-container {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .customer-img {
+    width: 4.4rem;
+  }
+}
+
+/******************************************************/
+/* --- FOR WIDTH <= 1200px --- */
+/******************************************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .nav-list {
+    gap: 3.2rem;
+  }
+
+  .input-fields {
+    gap: 3.2rem;
+  }
+}
+
+/******************************************************/
+/* --- FOR WIDTH <= 1024px --- */
+/******************************************************/
+
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/******************************************************/
+/* --- FOR WIDTH <= 912px --- */
+/******************************************************/
+@media (max-width: 57em) {
+  .html {
+    font-size: 43.75%;
+  }
+
+  .heading-tertiary {
+    line-height: 1.1;
+  }
+
+  .grid {
+    column-gap: 2.4rem;
+    row-gap: 4.8rem;
+  }
+
+  .section-header {
+    padding: 0 4.8rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 9.6rem;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .hero-text-box {
+    padding: 0 9.6rem;
+  }
+
+  .hero-customers-container {
+    flex-direction: column;
+  }
+
+  .hero-img {
+    width: 60%;
+    justify-items: center;
+  }
+
+  .trusted-logos {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2.4rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .visa,
+  .lg,
+  .sub {
+    grid-column: span 2;
+    width: 35%;
+  }
+
+  .mcd,
+  .sap {
+    grid-column: span 3;
+    width: 20%;
+  }
+
+  .meals-cards,
+  .cards-container {
+    gap: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+    padding: 0 4.8rem;
+  }
+
+  .cta {
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 0;
+  }
+
+  .cta-text-box {
+    padding-right: 6.4rem;
+    padding-left: 6.4rem;
+  }
+
+  .input-fields {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .footer-container {
+    column-gap: 2.4rem;
+    row-gap: 8rem;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-img {
+    width: 80%;
+  }
+
+  /* ----- MOBILE NAVIGATION IMPLEMENTATION ----- */
+  .section-header {
+    position: relative;
+  }
+
+  .main-nav-btn {
+    display: block;
+  }
+
+  .nav-links {
+    background-image: url(../img/black-noise-bg.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited,
+  .nav-cta:link,
+  .nav-cta:visited {
+    font-size: 3.2rem;
+  }
+
+  /* ----- OPENED MENU STATE */
+  .open-menu .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .open-menu .close-icon {
+    display: block;
+  }
+
+  .open-menu .menu-icon {
+    display: none;
+  }
+}
+
+/******************************************************/
+/* --- FOR WIDTH <= 784px --- */
+/******************************************************/
+@media (max-width: 49em) {
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .subheading {
+    font-size: 2.8rem;
+  }
+
+  .steps-container,
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .meals-cards,
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+  }
+
+  .section-hero {
+    border-bottom-left-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+  }
+
+  .hero-text-box {
+    padding: 0 4.8rem;
+  }
+
+  .section-trusted {
+    padding-bottom: 4.8rem;
+  }
+
+  .section-how {
+    padding: 6.4rem 0;
+  }
+
+  .steps-container {
+    padding: 0 9.6rem;
+  }
+
+  .step-img-box {
+    width: 70%;
+    justify-self: center;
+  }
+
+  .step1-img-box {
+    grid-row: 1;
+  }
+
+  .step3-img-box {
+    grid-row: 5;
+  }
+
+  .how-step1,
+  .how-step2 {
+    margin-bottom: 3.2rem;
+  }
+
+  .section-meals {
+    padding: 6.4rem 0;
+  }
+
+  .meals-heading {
+    margin-bottom: 6.4rem;
+  }
+
+  .meals-cards,
+  .cards-container,
+  .features-grid {
+    padding: 0 6.4rem;
+  }
+
+  .section-testimonial {
+    padding: 6.4rem 0 9.6rem;
+  }
+
+  .testimonial-heading {
+    margin-bottom: 6.4rem;
+  }
+
+  .cta-container {
+    max-width: 85rem;
+  }
+
+  .cta-text-box {
+    padding: 0 12rem 4.8rem;
+  }
+
+  .cta-img {
+    grid-row: 1;
+    height: 40rem;
+  }
+
+  .page-footer {
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-address {
+    grid-column: 2 / span 2;
+  }
+
+  .footer-copyright {
+    grid-column: 2 / -1;
+  }
+}
+
+/******************************************************/
+/* --- FOR WIDTH <= 656px --- */
+/******************************************************/
+@media (max-width: 41em) {
+  .steps-container {
+    padding: 0 4.8rem;
+  }
+
+  .step-img-box {
+    width: 90%;
+  }
+
+  .meals-cards,
+  .cards-container,
+  .pricing-container {
+    grid-template-columns: 1fr;
+  }
+
+  .meals-cards,
+  .cards-container,
+  .pricing-container {
+    padding: 0 16rem;
+  }
+
+  .features-grid {
+    padding: 0;
+  }
+}
+
+/******************************************************/
+/* --- FOR WIDTH <= 576px --- */
+/******************************************************/
+@media (max-width: 36em) {
+  .btn:link,
+  .btn:visited {
+    padding: 2rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+
+  .meals-cards,
+  .cards-container,
+  .pricing-container {
+    padding: 0 10rem;
+  }
+
+  .cta-text-box {
+    padding-right: 6.4rem;
+    padding-left: 6.4rem;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / -1;
+  }
+}
+
+/******************************************************/
+/* --- FOR WIDTH <= 480px --- */
+/******************************************************/
+@media (max-width: 30em) {
+  .html {
+    font-size: 37.5%;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .section-hero {
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+  }
+
+  .hero-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .hero-text-box {
+    padding-right: 4.8rem;
+    padding-left: 4.8rem;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  .hero-btns .btn--sec {
+    margin-left: 0;
+  }
+
+  .hero-img {
+    width: 85%;
+  }
+
+  .trusted-heading {
+    font-size: 3.6rem;
+  }
+
+  .visa,
+  .lg,
+  .sub {
+    width: 45%;
+  }
+
+  .mcd,
+  .sap {
+    width: 30%;
+  }
+
+  .step-img-box {
+    width: 100%;
+  }
+
+  .steps-container {
+    padding: 0 3.2rem;
+  }
+
+  .meals-cards,
+  .cards-container,
+  .pricing-container {
+    padding: 0 2.8rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+    padding: 0 3.2rem;
+  }
+
+  .pricing-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .cta-text-box {
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+  }
+
+  .cta-img {
+    height: 30rem;
+  }
+
+  .page-footer {
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+  }
+
+  .social-logo {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .quick-links {
+    grid-column: 2 / -1;
+  }
+
+  .footer-contact {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-privacy {
+    gap: 2.4rem;
+  }
+}
