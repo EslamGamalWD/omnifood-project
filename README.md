@@ -6,7 +6,7 @@ Omnifood is an AI-powered food subscription that will make you eat healthy again
 
 ---
 
-## This website was built with
+## This website is built with
 
 - HTML5
 - CSS3
