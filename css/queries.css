@@ -374,6 +374,10 @@
     align-items: center;
   }
 
+  .hero-btns .btn--sec {
+    margin-left: 0;
+  }
+
   .hero-img {
     width: 75%;
   }
@@ -427,10 +431,6 @@
   .hero-text-box {
     padding-right: 4.8rem;
     padding-left: 4.8rem;
-  }
-
-  .hero-btns .btn--sec {
-    margin-left: 0;
   }
 
   .hero-img {
